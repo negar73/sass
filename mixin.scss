@@ -1,0 +1,42 @@
+// mixins.scss
+@mixin header() {
+    .header {
+      background-color: $primary;
+      color: #fff;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+  }
+  @mixin container(){
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @mixin button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 28px;
+    color: #777777;
+    background-color: $brand-color;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+  
+    &:hover {
+      background-color: darken($brand-color, 10%);
+    }
+  }
+  
